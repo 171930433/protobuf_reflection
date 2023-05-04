@@ -23,7 +23,7 @@ execute_process(
 include_directories(${PROJECT_BINARY_DIR})
 
 add_executable(demo main.cpp person.pb.cc)
-target_link_libraries(demo  protobuf)
+target_link_libraries(demo  protobuf::libprotobuf)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
